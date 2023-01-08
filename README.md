@@ -92,7 +92,7 @@ I decided to divide the many functionalities into smaller modules and create cla
 All of the classes are store in the ```src``` directory.
 
 The initial file *app.js* creates a new instance of the class ``` File ```. The ```parseSCV()``` method parses the csv file using the ```csvParser``` package.
-When the ```File``` instace is created it also creates an instande of ```Checks``` class. From the checks class we get the what params that were passed and the values for it.
+When the ```File``` instace is created it also creates an instande of ```Checks``` class. From the checks class we get the what params that were passed and the values for it. To parse the parameter given in the terminal I used the ```minimist``` npm package that makes handling the parameters easier. 
 
 The ```Utitly``` class has the methods where most of the logic resides. Based on what params were passed the corresponing method form the ```Utility``` class is called.
 
